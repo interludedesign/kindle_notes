@@ -18,7 +18,7 @@ RSpec.describe NoteExtractor do
     end
   end
 
-  describe '#extract' do
+  describe '.extract' do
     context 'when there are highlights and notes' do
       let(:html) { multiple_notes_fixture }
       let(:expected_notes) do
