@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+# Get the absolute path of the parent directory
+parent_dir = File.expand_path('..', __dir__)
+
+# Add the parent directory to the load path
+$LOAD_PATH.unshift(parent_dir)
+
+require 'init'
+
+if ARGV.length == 1
+  notes = NoteExtractor.extract_from_file(ARGV[0])
+  puts notes.join("\n")
+else
+  puts 'Usage: bin/kindle_notes <kindle_html_file>'
+end
