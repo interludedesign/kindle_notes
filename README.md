@@ -1,9 +1,12 @@
 # Kindle Notes
-Utility for collating notes from a Kindle HTML export. Returns a list of bulleted notes for a given Kindle book export.
+Utility for collating notes from a Kindle HTML export. Returns a list of bulleted notes.
 
-## Usage
 ```sh
-bin/kindle_notes /path/to/kindle_book_export.html
+$ bin/kindle_notes user_story_mapping.html
+=>
+- The objective of a story map is not a pile of cards on the floor, it’s a shared understanding
+- Focus on the breath of the Story Map first and then come back for the details
+- Split out tasks into subtasks or variants. Roll them up in to summary-level tasks
 ```
 
 ## Console
